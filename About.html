@@ -1,0 +1,317 @@
+
+<!--Start home page-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Pearl of Africa Hotel</title>
+<link rel="icon" type="image/x-icon" href="logo.png">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+<style>
+
+html {box-sizing: border-box;}
+
+/* Start css header */
+header {
+  padding: 5px;
+  text-align: center;
+}
+/* End css header */
+
+
+
+/* Start css topnav tabs */
+.topnav {
+    overflow: hidden;
+    background-color: #333;
+    position: sticky;
+    top: 0;
+  }
+
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 22px;
+  }
+
+  .topnav a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .topnav a.active {
+    background-color: #04AA6D;
+    color: white;
+  }
+
+  .topnav a:active {
+    color: #ddd;
+  }
+
+
+/* End css topnav tabs */
+
+
+
+/* Start css body */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: rgba(0, 30, 70, 0.5);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  animation: mymove 5s infinite;
+}
+/* End css body */
+
+
+
+/* Start css headings */
+h1 {font-size: 40px;
+        color: orange;
+        text-align: center;
+   }
+
+h2 {font-size: 30px;
+        color: white;
+   }
+
+h3 {font-size: 20px;
+
+   }
+/* End css headings */
+
+
+
+/* Start css Paragraphs */
+p {font-size: 25px;
+  color: white;
+  }
+
+p.two {font-size: orange 20px;
+    }
+/* End css Paragraphs */
+
+
+
+/* start ccs all images */
+img {
+  width: 60%;
+  height: auto;
+}
+
+img {
+  width: 60%;
+  height: auto;
+}
+
+/* End ccs all images */
+
+
+
+/* start css columns */
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.column:hover {
+  box-shadow: 0 0 20px 10px rgba(140, 140, 0, 0.5);
+}
+/* End css columns */
+
+
+
+/* Start css cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  background-color:  rgba(50, 0, 0, 0.5);
+  margin: 8px;
+}
+/* End css cards */
+
+
+
+/* Start css sections */
+.about-section {
+  padding: 10px;
+  margin: 0px 0px 10px 0px;
+  text-align: center;
+  background-color: rgba(30, 90, 0, 0.5);
+  color: white;
+}
+/* End css sections */
+
+
+
+/* Start css Containers */
+.container {
+  padding: 0 16px;
+  background-color: rgba(30, 90, 0, 0.5);
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+/* End css Containers */
+
+
+
+/* Start css titles */
+.title {
+  color: orange;
+}
+/* End css titles */
+
+
+
+/* Start css buttons */
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.button:hover {
+  background-color: #555;
+}
+
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+/* End css buttons */
+
+
+
+/* Start css links */
+a:link {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+/* End css links */
+
+@keyframes mymove {
+  from {background-color: rgba(0, 30, 70, 0.5);}
+  to {background-color: rgba(70, 30, 0, 0.5);}
+}
+
+
+
+</style>
+</head>
+
+
+<!--Start html body -->
+<body>
+
+
+<!--Start html header-->
+<header>
+    <img src="logof.png" width="500px" height="200px">
+</header>
+<!--End html header-->
+
+
+
+<!--Start html Navigation tabs div-->
+<div class="topnav">
+  <a href="Home.html">Home</a>
+  <a href="Services.html">Services </a>
+  <a class="active" href="About.html">About us</a>
+  <a href="Contact.html">Contact us</a>
+</div>
+<!--End html Navigation tabs div-->
+
+
+
+<!--start html Our management div-->
+<div class="about-section">
+  <h1>Our Management</h1>
+  <p>Here is the Top management of Pearl of Africa Hotel</p>
+</div>
+<!--End html Our management div-->
+
+
+<h2 style="text-align:center">Pearl Of Africa Hotel Management</h2>
+
+
+
+<!--start html Karungi Sharon container-->
+<div class="row">
+  <div class="column">
+    <div class="card"><a target="_blank" href="tean1.jpg">
+      <img src="team4.jpg" alt="Jane" style="width:100%"></a>
+      <div class="container">
+        <h2>Faridah Nakazibwe</h2>
+        <p class="title">Manager</p>
+        <p>She is the Managing Director and imediate supervisor of the Hotel</p>
+        <p><button class="button"><a href = "mailto: a@gmail.com">Contact</a></button></p>
+      </div>
+    </div>
+  </div>
+<!--End html Karungi Sharon container-->
+
+
+
+<!--start html Alex Ruhunda container-->
+  <div class="column">
+    <div class="card">
+      <img src="team2.jpg" alt="Mike" style="width:100%">
+      <div class="container">
+        <h2>Alex Ruhunda</h2>
+        <p class="title">Board Chairperson</p>
+        <p>He is the Chairperson Board of Directors for Pearl of Africa Hotel</p>
+        <p><button class="button"><a href = "mailto: b@gmail.com">Contact</a></button></p>
+      </div>
+    </div>
+  </div>
+<!--End html Alex Ruhunda container-->
+
+
+
+<!--start html Winnie Kiiza container-->
+  <div class="column">
+    <div class="card">
+      <img src="team3.jpg" alt="John" style="width:100%">
+      <div class="container">
+        <h2>Winnie Kiiza</h2>
+        <p class="title">CEO & Founder</p>
+        <p>She is the Chief Executive Officer and the founder of this Hotel</p>
+        <p><button class="button"><a href = "mailto: c@gmail.com">Contact</a></button></p>
+      </div>
+    </div>
+  </div>
+</div>
+<!--End html Winnie Kiiza container-->
+
+
+
+</body>
+<!--End html body-->
+
+</html>
+<!--End home page-->
