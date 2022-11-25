@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<!--Start html file-->
+  <html lang="en">
+  <!--Start head-->
+    <head>
+     <title>Pearl of Africa Hotel</title>
+     <link rel="icon" type="image/x-icon" href="logo.png">
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
+
+      <!--Start css style-->
+        <style>
+         * {box-sizing: border-box;
+         }
+
+          /* Start headings css*/
+            h1 {font-size: 60px;
+              color: white;
+            }
+
+            h2 {font-size: 30px;
+              color: orange;
+            }
+
+            h3 {font-size: 20px;
+
+            }
+          /* End headings css*/
+
+
+          /* Start paragraphs css*/
+            p {font-size: 20px;
+
+            }
+
+            p.one {font-size: white 20px;
+              color: white;
+              background: rgba(0, 50, 0, 0.5);
+              margin: 25px 50px 75px 50px;
+              padding: 30px 50px 30px 50px;
+              text-align: center;
+            }
+          /*End paragraphs css */
+
+
+          /* Start images css */
+            img {
+              width: 60%;
+              height: auto;
+            }
+          /* End images css*/
+
+
+          /* Start header css */
+            header {
+            padding: 5px;
+            text-align: center;
+            }
+          /* End header css*/
+
+
+          /* Start body css */
+            body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-image: url('poah.jpg');
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            }
+          /* End body css */
+
+
+          /* Start slider css */
+           .mySlides {display: none}
+
+            /* Start slider images css */
+              img {vertical-align: middle;
+              }
+            /* End slider images css */
+
+            /* Start Slider container css*/
+              .slideshow-container {
+              max-width: 1000px;
+              position: relative;
+              margin: auto;
+              }
+            /* End Slider container css*/
+
+            /* start slider Next & previous icons css*/
+
+              /* start slider Next & previous icons general css*/
+                .prev, .next {
+                cursor: pointer;
+                position: absolute;
+                top: 50%;
+                width: auto;
+                padding: 16px;
+                margin-top: -22px;
+                color: white;
+                font-weight: bold;
+                font-size: 18px;
+                transition: 0.6s ease;
+                border-radius: 0 3px 3px 0;
+                user-select: none;
+                }
+              /* End slider Next & previous icons css */
+
+              /* start slider next icon position css */
+                .next {
+                right: 0;
+                border-radius: 3px 0 0 3px;
+                }
+              /* End slider next icon position css */
+
+              /* Start next & previous icon hover css */
+                .prev:hover, .next:hover {
+                background-color: rgba(0,0,0,0.8);
+                }
+              /* End next & previous icon hover css */
+
+            /* End slider Next & previous icons css */
+
+            /*start slider text css*/
+
+              /* start slider Caption text css */
+                .text {
+                color: #f2f2f2;
+                font-size: 20px;
+                padding: 8px 12px;
+                position: absolute;
+                bottom: 8px;
+                width: 100%;
+                text-align: center;
+                background-color: rgb(30, 10, 0, 0.5);
+                }
+              /* End slider Caption text css */
+
+              /* Start slider Number text (1/3 etc) css */
+                .numbertext {
+                color: #f2f2f2;
+                font-size: 15px;
+                padding: 8px 12px;
+                position: absolute;
+                top: 0;
+                }
+              /* End slider Number text (1/3 etc) css */
+
+            /*End slider text css*/
+
+            /* Start slider dots css*/
+
+              /* Start slider dots general css*/
+                .dot {
+                cursor: pointer;
+                height: 15px;
+                width: 15px;
+                margin: 0 2px;
+                background-color: #bbb;
+                border-radius: 50%;
+                display: inline-block;
+                transition: background-color 0.6s ease;
+                }
+              /* End slider dots general css*/
+
+              /* Start slider dots hover & active css*/
+                .active, .dot:hover {
+                background-color: #717171;
+                }
+              /* End slider dots hover & active css*/
+
+            /* End slider dots css*/
+
+            /* Start slider animation css*/
+
+              /* Start slider Fading animation genaral css */
+                .fade {
+                animation-name: fade;
+                animation-duration: 1.5s;
+                }
+              /* End slider Fading animation general css */
+
+              /* Start slider Fading animation opacity query css */
+                @keyframes fade {
+                from {opacity: .4}
+                to {opacity: 1}
+                }
+              /* End slider Fading animation opacity query css */
+
+            /* End slider animation css*/
+
+            /* Start slider screen fitting query css*/
+              @media only screen and (max-width: 300px) {
+              .prev, .next,.text {font-size: 11px}
+              }
+            /* End slider screen fitting query css*/
+
+          /* End slider css */
+
+
+          /* Start top navigation tabs css */
+
+            /* Start topnav tabs general css */
+             .topnav {
+              overflow: hidden;
+              background-color: #333;
+              position: sticky;
+              top: 0;
+              z-index: 1;
+              }
+            /* End topnav tabs general css */
+
+            /* Start topnav tabs links css */
+
+              /* Start topnav tabs general links css */
+                .topnav a {
+                float: left;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+                font-size: 22px;
+                }
+              /* End topnav tabs general link css */
+
+              /* Start topnav tabs link hover css */
+                .topnav a:hover {
+                background-color: #ddd;
+                color: black;
+                }
+              /* End topnav tabs link hover css */
+
+              /* Start active topnav tabs link css */
+                .topnav a.active {
+                background-color: #04AA6D;
+                color: white;
+                }
+              /* End active topnav tabs link css */
+
+            /* End topnav tabs links css */
+
+          /* End top navigation tabs css */
+
+        </style>
+      <!-- End css sytle -->
+    </head>
+  <!--End head-->
+
+
+  <!-- body html -->
+     <body>
+
+      <!-- header html -->
+      <header>
+          <img src="logof.png" width="500px" height="200px">
+      </header>
+
+      <!-- Start top navigation bar tabs html -->
+      <div class="topnav">
+        <a class="active" href="Home.html">Home</a>
+        <a href="Services.html">Services </a>
+        <a href="About.html">About us</a>
+        <a href="Contact.html">Contact us</a>
+      </div>
+      <!-- End top navigation bar tabs html -->
+
+
+      <!--Start slider container html -->
+      <div class="slideshow-container">
+
+        <!--Start slider images and bottom texts html -->
+         <div class="mySlides fade">
+           <div class="numbertext">1 / 5</div>
+           <img src="img1.jpg" style="width:100%">
+           <div class="text">We have cool and beautiful bedrooms</div>
+         </div>
+
+         <div class="mySlides fade">
+           <div class="numbertext">2 / 5</div>
+           <img src="img2.jpg" style="width:100%">
+           <div class="text">We serve Appetising meals</div>
+         </div>
+
+         <div class="mySlides fade">
+           <div class="numbertext">3 / 5</div>
+           <img src="img3.jpg" style="width:100%">
+           <div class="text">We have clean swimming pool</div>
+         </div>
+
+         <div class="mySlides fade">
+           <div class="numbertext">4 / 5</div>
+           <img src="img4.jpg" style="width:100%">
+           <div class="text">We hire vehicles for touring</div>
+         </div>
+
+         <div class="mySlides fade">
+           <div class="numbertext">5 / 5</div>
+           <img src="img5.jpg" style="width:100%">
+           <div class="text">We have perfect resting points</div>
+         </div>
+
+        <!--End slider images and bottom texts html -->
+
+       <!--Start slider prev and next arrows html -->
+       <a class="prev" onclick="plusSlides(-1)">❮</a>
+       <a class="next" onclick="plusSlides(1)">❯</a>
+       <!--End slider prev and next arrows html -->
+
+      </div>
+      <!--End slider container html -->
+
+      <br>
+
+      <!--Start slider bottom dots html -->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+      </div>
+    <!--End slider bottom dots html -->
+
+    <!--Start Paragraph one html -->
+      <p class="one">
+
+        Pearl of Africa Hotel is located in Kabarole District within Fort Portal City. It is found 20KM from the city center as you head to Kasese.
+        Pearl of Africa Hotel is the ideal base from which to adventure into the hustle and bustle of the City, whether you are on business or here for leisure.
+        Pearl of Africa gives you the final destination for all your accommodation needs and other related services.
+        <br>
+        <br>
+        We offer you Service Excellence in the form of superb accommodation facilities from luxury Self-contained Executive Rooms to upmarket Deluxe Rooms in the City
+        Experience the best value for money in the city. All our facilities are centrally located with necessary amenities nearby.
+        We offer all the normal executive services including good security, Airport and City Transfers, high speed Wifi, air conditioned spaces,
+        DSTV Decoder in each room, a Restaurant and Bar, 4 conference/banquet rooms etc.Timeless elegance and personalised luxury are found at the award-winning Pearl of Africa Hotel
+        <br>
+        <br>
+        <b>  Pearl of Africa Hotel - For your best beautiful moments </b>
+        <br>
+
+        <!--Start two bottom links html -->
+        <i class="material-icons">facebook</i><a href="https://www.facebook.com">PAH - facebook</a>
+        <i class="material-icons">phone</i></i><a href="tel:2564280940">Call us on 256-428-0940</a>
+        <!--End two bottom links html -->
+
+      </p>
+      <!--End Paragraph html -->
+
+
+     <!--Start Slider javascript-->
+      <script>
+        let slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " active";
+        }
+      </script>
+     <!--End Slider javascript-->
+
+    </body>
+
+  </html>
+<!--End html file-->
